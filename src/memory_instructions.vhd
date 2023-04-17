@@ -17,7 +17,7 @@ architecture RTL of instruction_memory is
     begin
         for i in 63 downto 0 loop
             result (i) := (others => '0');
-        end loop;                    -- PC        -- INSTRUCTION  -- COMMENTAIRE
+        end loop;                 -- PC        -- INSTRUCTION  -- COMMENTAIRE
         result (0) := x"E3A01020";-- 0x0 _main -- MOV R1,#0x20 -- R1 = 0x20
         result (1) := x"E3A02000";-- 0x1		 -- MOV R2,#0x00 -- R2 = 0
         result (2) := x"E6110000";-- 0x2 _loop -- LDR R0,0(R1) -- R0 = DATAMEM[R1]
