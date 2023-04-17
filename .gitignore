@@ -3,3 +3,5 @@
 !/.gitignore
 !*.vhd
 !README.md
+!flake.nix
+!flake.lock
