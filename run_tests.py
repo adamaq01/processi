@@ -18,6 +18,8 @@ lib.add_source_file("src/alu.vhd")
 lib.add_source_file("src/mux_21.vhd")
 lib.add_source_file("src/sign_extender.vhd")
 lib.add_source_file("src/data_memory.vhd")
+lib.add_source_file("src/instruction_memory.vhd")
+lib.add_source_file("src/operation_unit.vhd")
 
 # Add all tests files ending in .vhd to library
 lib.add_source_files("tests/*.vhd")
