@@ -6,9 +6,9 @@ entity data_memory is
     port(
         CLK: in std_logic; -- Clock
         Reset: in std_logic; -- Async Reset
-        DataIn: in std_logic_vector(31 downto 0);
-        DataOut: out std_logic_vector(31 downto 0);
-        Addr: inout std_logic_vector(5 downto 0);
+        DataIn: in std_logic_vector(31 downto 0); -- Data In
+        DataOut: out std_logic_vector(31 downto 0); -- Data Out
+        Addr: in std_logic_vector(5 downto 0); -- Address
         WrEn: in std_logic -- Write Enable
     );
 end entity;
