@@ -24,11 +24,8 @@ begin
                 Banc(i) <= (others => '0');
             end loop;
         elsif rising_edge(CLK) then
-            report "Rising edge " & to_string(WrEn);
             if WrEn = '1' then
                 Banc(to_integer(unsigned(Addr))) <= DataIn;
-                report "Writing in memory at Addr " & to_hstring(Addr);
-                report "Writing value " & to_hstring(DataIn);
             end if;
         end if;
     end process;
