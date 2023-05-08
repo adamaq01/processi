@@ -23,6 +23,7 @@ lib.add_source_file("src/components/register32.vhd")
 lib.add_source_file("src/components/instruction_decoder.vhd")
 lib.add_source_file("src/components/state_register.vhd")
 lib.add_source_file("src/operation_unit.vhd")
+lib.add_source_file("src/processing_unit.vhd")
 
 # Add all tests files ending in .vhd to library
 lib.add_source_files("tests/*.vhd")
