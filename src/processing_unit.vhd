@@ -13,7 +13,6 @@ entity processing_unit is
         ALUSrc: in std_logic;
         MemWr: in std_logic;
         ALUCtr: in std_logic_vector(2 downto 0);
-        WrEn: in std_logic;
         WrSrc: in std_logic;
         DataAff: out std_logic_vector(31 downto 0);
         N, Z, C, V: out std_logic
