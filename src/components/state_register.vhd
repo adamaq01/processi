@@ -17,7 +17,7 @@ begin
     registre: entity work.register32 port map(
         CLK => CLK,
         RST => RST,
-        DataIn => (N & C & Z & V & X"0000000"),
+        DataIn => (N & Z & C & V & X"0000000"),
         DataOut => DataOut,
         WE => WE
     );
