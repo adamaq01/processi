@@ -20,6 +20,9 @@ lib.add_source_file("src/sign_extender.vhd")
 lib.add_source_file("src/data_memory.vhd")
 lib.add_source_file("src/instruction_memory.vhd")
 lib.add_source_file("src/operation_unit.vhd")
+lib.add_source_file("src/register32.vhd")
+lib.add_source_file("src/instruction_decoder.vhd")
+lib.add_source_file("src/state_register.vhd")
 
 # Add all tests files ending in .vhd to library
 lib.add_source_files("tests/*.vhd")
