@@ -17,10 +17,10 @@ architecture tb of tb_5 is
     signal Pol: std_logic := '1';
     signal KEY: std_logic_vector(1 downto 0) := "00";
     signal SW: std_logic_vector(9 downto 0) := "0000000000";
-    signal HEX0: std_logic_vector(6 downto 0);
-    signal HEX1: std_logic_vector(6 downto 0);
-    signal HEX2: std_logic_vector(6 downto 0);
-    signal HEX3: std_logic_vector(6 downto 0);
+    signal HEX0: std_logic_vector(0 to 6);
+    signal HEX1: std_logic_vector(0 to 6);
+    signal HEX2: std_logic_vector(0 to 6);
+    signal HEX3: std_logic_vector(0 to 6);
     signal Done: boolean := false;
 begin
     -- System Inputs

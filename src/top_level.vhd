@@ -7,10 +7,10 @@ entity top_level is
         CLK: in std_logic;
         KEY: in std_logic_vector(1 DOWNTO 0);
         SW: in std_logic_vector(9 DOWNTO 0);
-        HEX0: out std_logic_vector(6 downto 0);
-        HEX1: out std_logic_vector(6 downto 0);
-        HEX2: out std_logic_vector(6 downto 0);
-        HEX3: out std_logic_vector(6 downto 0)
+        HEX0: out std_logic_vector(0 to 6);
+        HEX1: out std_logic_vector(0 to 6);
+        HEX2: out std_logic_vector(0 to 6);
+        HEX3: out std_logic_vector(0 to 6)
     );
 end entity;
 
