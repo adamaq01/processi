@@ -8,7 +8,7 @@ entity cpu is
         Reset: in std_logic;
         Aff: out std_logic_vector(31 downto 0)
     );
-end cpu;
+end entity;
 
 architecture RTL of cpu is
     signal instruction: std_logic_vector(31 downto 0);

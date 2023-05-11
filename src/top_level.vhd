@@ -7,7 +7,7 @@ entity top_level is
         CLK: in std_logic;
         Reset: in std_logic;
     );
-end cpu;
+end entity;
 
 architecture RTL of top_level is
     signal Aff: std_logic_vector(31 downto 0)
