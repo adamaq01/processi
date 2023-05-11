@@ -131,6 +131,7 @@ begin
         wait for 1 ns;
 
         -- Check output
+        wait until rising_edge(CLK);
         check_equal(to_hstring(busW), "00000030", "Output not equal to 48");
 
 
@@ -165,6 +166,7 @@ begin
         wait for 1 ns;
 
         -- Check output
+        wait until rising_edge(CLK);
         check_equal(to_hstring(busW), "00000075", "Output not equal to 117");
 
 
@@ -199,6 +201,7 @@ begin
         wait for 1 ns;
 
         -- Check output
+        wait until rising_edge(CLK);
         check_equal(to_hstring(busW), "FFFFFFD0", "Output not equal to 4294967248");
 
 
@@ -233,6 +236,7 @@ begin
         wait for 1 ns;
 
         -- Check output
+        wait until rising_edge(CLK);
         check_equal(to_hstring(busW), "0000001F", "Output not equal to 31");
 
 
