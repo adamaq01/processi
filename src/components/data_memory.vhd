@@ -21,7 +21,15 @@ begin
     begin
         if Reset = '1' then
             for i in 63 downto 0 loop
-                Banc(i) <= (others => '0');
+                if i = 39 then
+                    Banc(i) <= x"00000001";
+                elsif i = 40 then
+                    Banc(i) <= x"00000007";
+                elsif i = 41 then
+                    Banc(i) <= x"000004FF";
+                else
+                    Banc(i) <= (others => '0');
+                end if;
             end loop;
         elsif rising_edge(CLK) then
             if WrEn = '1' then
