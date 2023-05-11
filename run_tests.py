@@ -28,7 +28,7 @@ lib.add_source_file("src/control_unit.vhd")
 lib.add_source_file("src/cpu.vhd")
 
 # Add all tests files ending in .vhd to library
-lib.add_source_files("tests/*.vhd")
+lib.add_source_files("simu/*.vhd")
 
 # Run vunit function
 vu.main()
