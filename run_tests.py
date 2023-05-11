@@ -26,6 +26,8 @@ lib.add_source_file("src/operation_unit.vhd")
 lib.add_source_file("src/processing_unit.vhd")
 lib.add_source_file("src/control_unit.vhd")
 lib.add_source_file("src/cpu.vhd")
+lib.add_source_file("src/seven_seg_decoder.vhd")
+lib.add_source_file("src/top_level.vhd")
 
 # Add all tests files ending in .vhd to library
 lib.add_source_files("simu/*.vhd")
