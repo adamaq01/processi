@@ -114,11 +114,13 @@ begin
             when BAL =>
                 nPCSel <= '1';
                 RegWr <= '0';
+                PSREn <= '0';
                 MemWr <= '0';
                 RegAff <= '0';
             when BLT =>
                 nPCSel <= psr(31);
                 RegWr <= '0';
+                PSREn <= '0';
                 MemWr <= '0';
                 RegAff <= '0';
         end case;
