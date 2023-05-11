@@ -53,6 +53,8 @@ begin
         wait for 1 ns;
         check_equal(to_hstring(instruction), "BAFFFFFB", "Instruction not correct");
 
+        wait until rising_edge(CLK);
+
         Done <= true;
         test_runner_cleanup(runner); -- Simulation ends here
     end process;
